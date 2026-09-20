@@ -1,51 +1,29 @@
-function calculate() {
+function calculate(){
+    const first=document.getElementById("num1");
+    const second=document.getElementById("num2");
+    const num1=Number(first.value);
+    const num2=Number(second.value);
+    const operator=document.getElementById("operator").value;
+    const resultBox=document.getElementById("result");
 
-    let num1 = Number(document.getElementById("num1").value);
-    let num2 = Number(document.getElementById("num2").value);
-
-    let operator =
-        document.getElementById("operator").value;
+    if(first.value==="" || second.value===""){
+        resultBox.textContent="দুটি সংখ্যাই লিখুন।";
+        return;
+    }
 
     let result;
+    if(operator==="+") result=num1+num2;
+    else if(operator==="-") result=num1-num2;
+    else if(operator==="*") result=num1*num2;
+    else if(operator==="/") result=num2===0 ? "০ দিয়ে ভাগ করা যায় না" : num1/num2;
 
-    if (operator === "+") {
-        result = num1 + num2;
-    }
-
-    else if (operator === "-") {
-        result = num1 - num2;
-    }
-
-    else if (operator === "*") {
-        result = num1 * num2;
-    }
-
-    else if (operator === "/") {
-
-        if (num2 === 0) {
-            result = "০ দিয়ে ভাগ করা যায় না";
-        } else {
-            result = num1 / num2;
-        }
-    }
-
-    document.getElementById("result").innerText =
-        "ফলাফল: " + result;
+    resultBox.textContent="ফলাফল: "+result;
 }
 
-
-function startLearning() {
-
-    document.getElementById("classes")
-        .scrollIntoView({
-            behavior: "smooth"
-        });
+function startLearning(){
+    document.getElementById("classes").scrollIntoView({behavior:"smooth"});
 }
 
-
-function startQuiz() {
-
-    alert(
-        "খুব শিগগিরই এখানে Math Quiz চালু হবে!"
-    );
+function comingSoon(name){
+    alert(name+" — এই ফিচারটি পরবর্তী ধাপে চালু করা হবে।");
 }
