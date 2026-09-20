@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>এসো Math শিখি | গণিত শেখার ওয়েবসাইট</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            📐 এসো Math শিখি
+        </div>
+
+        <nav>
+            <a href="#">হোম</a>
+            <a href="#calculator">ক্যালকুলেটর</a>
+            <a href="#classes">শ্রেণি</a>
+            <a href="#quiz">MCQ</a>
+            <a href="#formula">সূত্র</a>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <h1>গণিত শিখুন সহজে</h1>
+
+        <p>
+            শ্রেণি ৩ থেকে ১০ পর্যন্ত গণিত,
+            সূত্র, MCQ, অনুশীলন ও ক্যালকুলেটর
+        </p>
+
+        <button onclick="startLearning()">
+            শেখা শুরু করুন
+        </button>
+
+    </section>
+
+
+    <!-- Calculator -->
+    <section id="calculator" class="section">
+
+        <h2>🧮 Math Calculator</h2>
+
+        <div class="calculator">
+
+            <input
+                type="number"
+                id="num1"
+                placeholder="প্রথম সংখ্যা"
+            >
+
+            <select id="operator">
+                <option value="+">যোগ (+)</option>
+                <option value="-">বিয়োগ (-)</option>
+                <option value="*">গুণ (×)</option>
+                <option value="/">ভাগ (÷)</option>
+            </select>
+
+            <input
+                type="number"
+                id="num2"
+                placeholder="দ্বিতীয় সংখ্যা"
+            >
+
+            <button onclick="calculate()">
+                হিসাব করুন
+            </button>
+
+            <div id="result">
+                ফলাফল এখানে দেখাবে
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Classes -->
+    <section id="classes" class="section">
+
+        <h2>📚 শ্রেণিভিত্তিক গণিত</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Class 3–5</h3>
+                <p>প্রাথমিক গণিত</p>
+                <button>শুরু করুন</button>
+            </div>
+
+            <div class="card">
+                <h3>Class 6–8</h3>
+                <p>মাধ্যমিক গণিত</p>
+                <button>শুরু করুন</button>
+            </div>
+
+            <div class="card">
+                <h3>Class 9–10</h3>
+                <p>SSC গণিত</p>
+                <button>শুরু করুন</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Quiz -->
+    <section id="quiz" class="section">
+
+        <h2>📝 Math MCQ Practice</h2>
+
+        <p>
+            বিভিন্ন শ্রেণির গণিতের MCQ অনুশীলন করুন।
+        </p>
+
+        <button onclick="startQuiz()">
+            Quiz শুরু করুন
+        </button>
+
+    </section>
+
+
+    <!-- Formula -->
+    <section id="formula" class="section">
+
+        <h2>📖 গুরুত্বপূর্ণ গণিতের সূত্র</h2>
+
+        <div class="formula">
+
+            <p>
+                <strong>বর্গের ক্ষেত্রফল:</strong>
+                বাহু × বাহু
+            </p>
+
+            <p>
+                <strong>আয়তের ক্ষেত্রফল:</strong>
+                দৈর্ঘ্য × প্রস্থ
+            </p>
+
+            <p>
+                <strong>শতকরা:</strong>
+                (অংশ ÷ মোট) × ১০০
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Eso Math Shikhi
+        </p>
+
+        <p>
+            গণিত শিখুন • অনুশীলন করুন • এগিয়ে যান
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
